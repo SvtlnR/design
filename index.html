@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>
+		About me
+	</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Questrial" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+	<header>
+		<div class="hdr">
+				Svetlana Ragulina
+		</div>	
+	</header>
+	<nav>
+		<div id="sandwich">
+				<div class="stripe"></div>
+				<div class="stripe"></div>
+				<div class="stripe"></div>
+		</div>
+		<ul>
+			<li class="navli"><div id="shgi">General information</div></li>
+			<li class="navli"><div id="shsk">Skills</div></li>
+			<li class="navli"><div id="shabout">About me</div></li>
+			<li class="navli"><div id="shcont">Contact</div></li>
+		</ul>
+	</nav>
+	<main>
+		<div id="geninf">
+			<div class="inf">
+		
+						<div class="par">
+							General information 
+						</div>
+					
+						<div class="content">	
+							<strong>Full name:</strong> Svetlana Ragulina. <br>
+							<strong>Birthday:</strong> 23 Sep,1998. <br>
+							<strong>School:</strong> finished school 22 in 2016. <br>
+							<strong>University:</strong> Petro Mohyla Black Sea National University.<br>
+							<strong>Department:</strong> Computer Science.<br>
+							<strong>Speciality:</strong>Computer science and IT.<br>
+							<strong>E-mail:</strong> <a href="mailto:svet.ragulina@gmail.com"> 
+							svet.ragulina@gmail.com</a>.<br>
+						</div>
+					
+					
+			</div>
+			<div class="imgwr">
+				<img class="photo" src="./images/photo.JPG" >
+			</div>
+		</div>
+		<div id="skills">
+			<div class="content">
+				<div class="imgskills" id="pic_html">
+					<img src="./images/html.png" >	
+				</div>
+				<div class="imgskills" id="pic_css">
+					<img src="./images/css.png" >	
+				</div>
+				<div class="imgskills" id="pic_js">
+					<img src="./images/js.png" >	
+				</div>
+				<div class="imgskills" id="pic_jquery">
+					<img src="./images/jquery.png" >	
+				</div>
+				<div class="imgskills" id="php_html">
+					<img src="./images/php.png" >	
+				</div>
+				<br>
+				<div class="descrip" id="html">
+					I have studied HTML5 at university.  
+				</div>
+				<div class="descrip" id="css">
+					I have studied CSS3 at university.   
+				</div>
+				<div class="descrip" id="js">
+					I have studied JS at university.  
+				</div>
+				<div class="descrip" id="jquery">
+					I have studied jQuery at university. As a rule I write scripts using jQuery.  
+				</div>
+				<div class="descrip" id="php">
+					I have recently started learning PHP.   
+				</div>
+			</div>
+		</div>
+		<div id="about">
+			<div class="inf">
+				<div class="content">
+					<strong>Hobby:</strong> play piano.<br>
+					<strong>Favourite books:</strong> 
+					<ul><li>"Gone with the Wind" by Margaret Mitchell,</li> 
+						<li>"The Thorn Birds" by Colleen McCullough,</li>
+						<li> "Angels and Demons" by Dan Brown.</li>
+					</ul>
+					<strong>Favourite shows</strong>: 
+					<ul> 
+						<li>The Ellen DeGeneres Show</li>
+					<div class="fr">
+					<iframe  src="https://www.youtube.com/embed/txtlWTDr34A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<li>The Late Late Show with James Corden</li>
+					<div class="fr">
+					<iframe  src="https://www.youtube.com/embed/QjvzCTqkBDQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<li>The Tonight Show Starring Jimmy Fallon</li>
+					<div class="fr">
+					<iframe  src="https://www.youtube.com/embed/tPwuLLL64HM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					</ul>
+				</div>
+				<img class="up" src="./images/up.png">
+			</div>
+		</div>
+		<div id="cont">
+			<div class="inf">
+			<div class="content">
+				 <a href="mailto:svet.ragulina@gmail.com"> 
+				<img src="./images/gmicon.png" class="icon">svet.ragulina@gmail.com</a>.<br>
+				<a href="https://www.instagram.com/_svtln_r/" target="_blank">
+				<img src="./images/instaicon.png" class="icon">@_svtln_r</a>.<br>
+				<a href="https://vk.com/svetlana_ragulina" target="_blank">
+				<img src="./images/vkicon.png" class="icon">Svetlana Ragulina</a>
+			</div>
+		</div>
+			<div id="inputoffer">
+				<div class="par">
+					Send me message
+				</div>
+				<div class="content">
+				<div class="err" id="errmail">Invalid e-mail</div>
+				<div class="err" id="errfile">File has to be .pdf,.jpeg or .jpg</div>
+				<div class="fileloaded"></div>
+				<form action="" method="post">
+					
+					<div class="inpfield">
+						
+						E-mail<br>
+						
+						<input type="text" id="email">
+					</div>
+					<div class="inpfield">
+						
+						Comment<br>
+						
+						<textarea id="comment"></textarea>
+					</div>
+					<div class="inpfield">
+						<div class="fileUpload">
+     					<label>
+							<input type="file" id="addfile">
+							<span>Choose file</span>
+						</label>
+					</div>
+					</div>
+					<div class="inpfield">
+						<input type="submit" id="sendform" class="btn"  value="Send">
+					</div>					
+				</form>
+		</div>
+	</div>
+	</div>
+	</main>
+	<footer>
+		
+	</footer>
+	<script src="./js/script.js"></script>
+	<script src="./js/valid.js"></script>
+</body>
+</html>
