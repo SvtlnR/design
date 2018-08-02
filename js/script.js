@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	$(".hdr").fadeIn('slow', function(){});
-	$(".descrip").hide();
 	$("#shgi").click(function(){
 		$("#about").hide('fast');
 		$("#cont").hide('fast');
@@ -29,9 +28,26 @@ $(document).ready(function(){
 		$("nav ul").toggle('fast');
 	});
 	$(".imgskills").click(function(){
-		$(".descrip").hide();
+		$(".descrip").text('');
 		var id='#'+$(this).attr('id').replace('pic_','');
-		$(id).show('fast');
+		switch(id){
+			case "#html": 
+				$(id).text('I have studied HTML5 at university.');
+				break;
+			case "#css":
+				$(id).text('I have studied CSS3 at university.');
+				break;
+			case "#js":
+				$(id).text('I have studied JS at university.');
+				break;
+			case "#jquery":
+				$(id).text('I have studied jQuery at university. As a rule I write scripts using jQuery. ');
+				break;
+			case "#php":
+				$(id).text('I have recently started learning PHP.');
+				break;
+
+		}
 	});
 	$(".btn, .fileUpload").hover(function(){
 		$(this).css('background-color','#c4a8aa');

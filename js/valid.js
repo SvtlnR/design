@@ -1,8 +1,7 @@
 jQuery(function($){
 	var readyMail=false;
 	var readyFile=false;
-	$('.err').hide('fast');
-	$(".fileloaded").hide('fast');
+	$(".fileloaded").css('display','none');
 	$('#email').blur(function() {
 		$("#resform").hide('fast');
 		if($(this).val() != '') {
@@ -11,11 +10,11 @@ jQuery(function($){
 						$(this).removeClass("errinp");
 						$(this).addClass("correctinp");
 						readyMail=true;
-						$('#errmail').hide('fast');
+						$('#errmail').text('');
 					} else {
 						$(this).removeClass("correctinp");
 						$(this).addClass("errinp");
-						$('#errmail').show('fast');
+						$('#errmail').text('Invalid e-mail');
 						readyMail=false;
 					}
 		} else {
@@ -28,16 +27,19 @@ jQuery(function($){
 		$("#resform").hide('fast');
 		var pattern=/\.(pdf|jpe?g)$/i;
 			if(pattern.test($(this).val())){
-				$('#errfile').hide('fast');
+				$('#errfile').text('');
+				$('#errfile').css('display','none');
 				var filename = $(this).val().replace(/.*\\/, "");
+				$(".fileloaded").css('display','block');
         		$(".fileloaded").text(filename);
-         		$(".fileloaded").show('fast');
 				readyFile=true;
 				
 			}
 			else{
-				$("#errfile").show('fast');
-				$(".fileloaded").hide('fast');
+				$(".fileloaded").css('display','none');
+				$(".fileloaded").text('');
+				$('#errfile').css('display','block');
+				$("#errfile").text('File has to be .pdf,.jpeg or .jpg');
 				readyFile=false;
 			}
 	});
